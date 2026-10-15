@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-cream: #FAF8F5;
+    --color-charcoal: #181615;
+    --color-terracotta: #A64B2A;
+    --color-olive: #4D5343;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #FAF8F5;
+    color: #181615;
+    font-family: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+  }
+
+  /* Foco visible editorial en color terracota */
+  :focus-visible {
+    outline: 2px solid #A64B2A;
+    outline-offset: 2px;
+  }
+}
+
+/* Respeto estricto a prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

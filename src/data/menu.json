@@ -1,0 +1,225 @@
+{
+  "categories": [
+    {
+      "id": "tradizionali",
+      "name": "Pizze Tradizionali",
+      "subtitle": "La esencia clásica de Nápoles con ingredientes con denominación de origen D.O.P.",
+      "iconName": "Flame"
+    },
+    {
+      "id": "autore",
+      "name": "Pizze d'Autore",
+      "subtitle": "Creaciones contemporáneas que exploran contrastes, trufa negra y embutidos de reserva.",
+      "iconName": "Sparkles"
+    },
+    {
+      "id": "antipasti",
+      "name": "Antipasti & Entradas",
+      "subtitle": "Platos para compartir horneados a fuego vivo y quesos artesanales importados.",
+      "iconName": "UtensilsCrossed"
+    },
+    {
+      "id": "dolci",
+      "name": "Dolci Artigianali",
+      "subtitle": "Postres italianos tradicionales elaborados diariamente en nuestra cocina.",
+      "iconName": "Cake"
+    },
+    {
+      "id": "bevande",
+      "name": "Vini & Bevande",
+      "subtitle": "Selección de vinos italianos, coctelería y refrescos tradicionales.",
+      "iconName": "Wine"
+    }
+  ],
+  "items": [
+    {
+      "id": "margherita-dop",
+      "categoryId": "tradizionali",
+      "name": "Margherita D.O.P.",
+      "italianName": "Margherita Tradizionale Napoletana",
+      "description": "Tomate San Marzano D.O.P., mozzarella di bufala campana, albahaca fresca del huerto y aceite de oliva virgen extra monovarietal.",
+      "priceCOP": 38000,
+      "imageUrl": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["masa-madre", "dop", "vegetariana"],
+      "availableOptions": [
+        { "id": "extra-bufala", "name": "Extra Mozzarella di Bufala (+60g)", "priceCOP": 9000 },
+        { "id": "borde-ricotta", "name": "Borde relleno de Ricotta trufada", "priceCOP": 8000 }
+      ]
+    },
+    {
+      "id": "marinara-verace",
+      "categoryId": "tradizionali",
+      "name": "Marinara Verace",
+      "italianName": "Marinara dell'Antica Tradizione",
+      "description": "Tomate San Marzano D.O.P., láminas de ajo confitado, orégano silvestre de Sicilia y aceite de oliva virgen extra. La reina histórica de Nápoles.",
+      "priceCOP": 32000,
+      "imageUrl": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["masa-madre", "vegetariana"],
+      "availableOptions": [
+        { "id": "anchoas-cetara", "name": "Adición de Anchoas de Cetara", "priceCOP": 8000 }
+      ]
+    },
+    {
+      "id": "diavola-calabra",
+      "categoryId": "tradizionali",
+      "name": "Diavola Calabra",
+      "italianName": "Diavola con Spianata & Miele Piccante",
+      "description": "Tomate San Marzano, fior di latte artesanal, Spianata Calabra picante curada, miel de flores infusionada con peperoncino y albahaca.",
+      "priceCOP": 44000,
+      "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["masa-madre", "picante"],
+      "availableOptions": [
+        { "id": "extra-spianata", "name": "Extra Salami Spianata", "priceCOP": 7000 },
+        { "id": "borde-ricotta", "name": "Borde relleno de Ricotta trufada", "priceCOP": 8000 }
+      ]
+    },
+    {
+      "id": "capricciosa-antica",
+      "categoryId": "tradizionali",
+      "name": "Capricciosa Antica",
+      "italianName": "Capricciosa con Funghi & Carciofi",
+      "description": "Fior di latte, prosciutto cotto artesanal, corazones de alcachofa romana, champiñones París salteados en horno de leña y aceitunas negras Gaeta.",
+      "priceCOP": 46000,
+      "imageUrl": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["masa-madre"],
+      "availableOptions": [
+        { "id": "extra-prosciutto-cotto", "name": "Extra Prosciutto Cotto", "priceCOP": 6000 }
+      ]
+    },
+    {
+      "id": "burrata-prosciutto",
+      "categoryId": "autore",
+      "name": "Burrata & Prosciutto di Parma 24 Mesi",
+      "italianName": "Burrata Pugliese e Parma Riserva",
+      "description": "Base blanca con fior di latte y pesto genovés fresco, terminada en frío con burrata entera de 125g, Prosciutto di Parma reserva 24 meses y reducción de Módena.",
+      "priceCOP": 54000,
+      "imageUrl": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["masa-madre", "de-autor", "dop"],
+      "availableOptions": [
+        { "id": "trufa-fresca", "name": "Gotas de Aceite de Trufa Blanca", "priceCOP": 5000 }
+      ]
+    },
+    {
+      "id": "tartufata-funghi",
+      "categoryId": "autore",
+      "name": "Tartufata & Funghi Selvatici",
+      "italianName": "Crema di Tartufo Nero & Funghi Trifolati",
+      "description": "Crema de trufa negra de Umbría, fior di latte, mix de setas silvestres salteadas al vino blanco, lascas de Parmigiano Reggiano 24 meses y aceite trufado.",
+      "priceCOP": 56000,
+      "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["masa-madre", "de-autor", "vegetariana"],
+      "availableOptions": [
+        { "id": "extra-parmigiano", "name": "Láminas extra de Parmigiano Reggiano", "priceCOP": 6000 }
+      ]
+    },
+    {
+      "id": "pera-gorgonzola",
+      "categoryId": "autore",
+      "name": "Quattro Formaggi, Pera & Noci",
+      "italianName": "Gorgonzola Dolce, Pera Caramellata & Noci",
+      "description": "Fior di latte, Gorgonzola Dolce D.O.P., queso Taleggio, peras finamente pochadas, nueces del nogal caramelizadas y un sutil hilo de miel de acacia.",
+      "priceCOP": 48000,
+      "imageUrl": "https://images.unsplash.com/photo-1544982503-9f984c14501a?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["masa-madre", "de-autor", "vegetariana"],
+      "availableOptions": [
+        { "id": "extra-nueces", "name": "Extra de Nueces Caramelizadas", "priceCOP": 4000 }
+      ]
+    },
+    {
+      "id": "fornace-119-speciale",
+      "categoryId": "autore",
+      "name": "Fornace 119 Speciale",
+      "italianName": "L'Iconica di Usaquén",
+      "description": "Nuestra insignia: masa de fermentación 72h con toque de carbón vegetal, tomate amarillo del Vesubio, carpaccio de Bresaola curada, stracciatella trufada y brotes de rúgula.",
+      "priceCOP": 58000,
+      "imageUrl": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["masa-madre", "de-autor"],
+      "availableOptions": [
+        { "id": "doble-stracciatella", "name": "Doble porción de Stracciatella trufada", "priceCOP": 8000 }
+      ]
+    },
+    {
+      "id": "focaccia-rosmarino",
+      "categoryId": "antipasti",
+      "name": "Focaccia al Rosmarino & Aglio Dolce",
+      "italianName": "Focaccia Barese con Sale di Maldon",
+      "description": "Masa de pizza al horno de leña con sal marina en escamas de Maldon, romero fresco y dip de pesto genovés artesanal.",
+      "priceCOP": 22000,
+      "imageUrl": "https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["masa-madre", "vegetariana"]
+    },
+    {
+      "id": "burrata-pugliese-confit",
+      "categoryId": "antipasti",
+      "name": "Burrata Pugliese con Pomodorini Confit",
+      "italianName": "Burrata Intera con Pomodorini al Forno",
+      "description": "Burrata entera de 150g, tomates cherry confitados al horno de piedra con orégano y ajo suave, pesto de pistacho de Bronte y panes crujientes de masa madre.",
+      "priceCOP": 36000,
+      "imageUrl": "https://images.unsplash.com/photo-1628294895950-9805252327bc?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["vegetariana", "dop"]
+    },
+    {
+      "id": "tiramisu-tradizionale",
+      "categoryId": "dolci",
+      "name": "Tiramisù Tradizionale al Mascarpone",
+      "italianName": "Il Vero Tiramisù con Savoiardi & Espresso Illy",
+      "description": "Bizcochos savoiardi artesanales embebidos en café Illy tostado y licor Amaretto di Saronno, crema de mascarpone batida al momento y cacao amargo Valrhona.",
+      "priceCOP": 24000,
+      "imageUrl": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["vegetariana"]
+    },
+    {
+      "id": "calzoncino-nutella",
+      "categoryId": "dolci",
+      "name": "Calzoncino Caldo con Nutella & Pistacchio",
+      "italianName": "Mini Calzone al Forno con Cuore di Nutella",
+      "description": "Masa de pizza horneada a leña rellena de Nutella caliente y ricotta cremosa, espolvoreada con pistachos tostados y azúcar glas.",
+      "priceCOP": 26000,
+      "imageUrl": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["vegetariana"]
+    },
+    {
+      "id": "chianti-classico",
+      "categoryId": "bevande",
+      "name": "Chianti Classico DOCG (Botella 750ml)",
+      "italianName": "Vino Rosso Toscano Sangiovese",
+      "description": "Vino tinto italiano de cuerpo medio con notas a cereza negra, especias y madera noble. Maridaje perfecto para nuestras pizzas de masa madre.",
+      "priceCOP": 115000,
+      "imageUrl": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["dop"],
+      "isAlcoholic": true
+    },
+    {
+      "id": "limonata-albahaca",
+      "categoryId": "bevande",
+      "name": "Limonata Fornace con Albahaca Fresca",
+      "italianName": "Limonata Fredda con Basilico Fresco",
+      "description": "Zumo de limones colombianos prensados al momento, almíbar de caña orgánica y maceración de albahaca fresca del huerto.",
+      "priceCOP": 14000,
+      "imageUrl": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["vegetariana"]
+    },
+    {
+      "id": "peroni-azzurro",
+      "categoryId": "bevande",
+      "name": "Cerveza Peroni Nastro Azzurro (330ml)",
+      "italianName": "Birra Superiore Italiana 5.1%",
+      "description": "Cerveza rubia lager premium italiana elaborada con cebada de primavera y maíz Nostrano dell'Isola. Refrescante y limpia.",
+      "priceCOP": 18000,
+      "imageUrl": "https://images.unsplash.com/photo-1608270586620-248524c67de9?q=80&w=1000&auto=format&fit=crop",
+      "badges": [],
+      "isAlcoholic": true
+    },
+    {
+      "id": "aperol-spritz",
+      "categoryId": "bevande",
+      "name": "Aperol Spritz Tradizionale",
+      "italianName": "Il Classico Aperitivo Italiano",
+      "description": "Prosecco DOC, infusión de Aperol italiano, soda mineral, rodaja de naranja fresca y aceituna verde.",
+      "priceCOP": 32000,
+      "imageUrl": "https://images.unsplash.com/photo-1560512823-829485b8bf24?q=80&w=1000&auto=format&fit=crop",
+      "badges": ["de-autor"],
+      "isAlcoholic": true
+    }
+  ]
+}
