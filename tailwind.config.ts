@@ -22,6 +22,9 @@ const config: Config = {
           700: '#3D3936',
           600: '#5C5652',
           400: '#8A837D',
+          300: '#B0A9A2',
+          200: '#CFCAC3',
+          100: '#ECE8E3',
         },
         terracotta: {
           DEFAULT: '#A64B2A',

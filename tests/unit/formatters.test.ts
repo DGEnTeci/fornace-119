@@ -3,7 +3,9 @@ import {
   formatCOP,
   sanitizeColombianPhone,
   isValidColombianPhone,
+  formatPhoneDisplay,
 } from '@/lib/formatters';
+
 
 describe('formatCOP', () => {
   it('formatea números a formato de pesos colombianos con separador de miles y sin decimales', () => {
@@ -71,4 +73,20 @@ describe('isValidColombianPhone', () => {
     expect(isValidColombianPhone('')).toBe(false);
   });
 });
+
+describe('formatPhoneDisplay', () => {
+  it('formatea números de 12 dígitos iniciando por 57 con espacios limpios', () => {
+    expect(formatPhoneDisplay('573000000000')).toBe('+57 300 000 0000');
+    expect(formatPhoneDisplay('573151234567')).toBe('+57 315 123 4567');
+  });
+
+  it('formatea números locales de 10 dígitos iniciando por 3 añadiendo prefijo +57', () => {
+    expect(formatPhoneDisplay('3001234567')).toBe('+57 300 123 4567');
+  });
+
+  it('retorna vacío para valores vacíos o nulos', () => {
+    expect(formatPhoneDisplay('')).toBe('');
+  });
+});
+
 

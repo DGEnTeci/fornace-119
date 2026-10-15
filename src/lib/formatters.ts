@@ -32,3 +32,26 @@ export function isValidColombianPhone(raw: string): boolean {
   return /^3\d{9}$/.test(sanitized);
 }
 
+/**
+ * Formatea un número telefónico para visualización amigable en la interfaz
+ * Ej: '573000000000' -> '+57 300 000 0000'
+ */
+export function formatPhoneDisplay(raw: string): string {
+  if (!raw) return '';
+  const digits = raw.replace(/\D/g, '');
+  if (digits.startsWith('57') && digits.length === 12) {
+    const area = digits.slice(2, 5);
+    const mid = digits.slice(5, 8);
+    const end = digits.slice(8);
+    return `+57 ${area} ${mid} ${end}`;
+  }
+  if (digits.length === 10 && digits.startsWith('3')) {
+    const area = digits.slice(0, 3);
+    const mid = digits.slice(3, 6);
+    const end = digits.slice(6);
+    return `+57 ${area} ${mid} ${end}`;
+  }
+  return raw.startsWith('+') ? raw : `+${raw}`;
+}
+
+

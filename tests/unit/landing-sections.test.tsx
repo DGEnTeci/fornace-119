@@ -83,12 +83,42 @@ describe('Task 6a: Secciones de Marca y Accesibilidad', () => {
     expect(screen.getByText(/el exceso de alcohol es perjudicial para la salud/i)).toBeTruthy();
     expect(screen.getByText(/prohíbase el expendio de bebidas embriagantes a menores de edad/i)).toBeTruthy();
 
-    // Verificación del aviso de marca ficticia con fines de demostración
+    // Verificación del aviso de marca ficticia con fines de demostración técnica
     expect(screen.getByText(/marca ficticia con fines de demostración/i)).toBeTruthy();
 
     // Disparador de política de privacidad
-    const privacyBtn = screen.getByRole('button', { name: /privacidad & tratamiento de datos/i });
+    const privacyBtn = screen.getAllByRole('button', { name: /tratamiento de datos|privacidad/i })[0];
     fireEvent.click(privacyBtn);
     expect(onOpenPrivacy).toHaveBeenCalledTimes(1);
   });
+
+  it('organiza el Footer en 4 columnas legibles con horarios, navegación, pagos y botón de WhatsApp formateado', () => {
+    const onOpenPrivacy = vi.fn();
+    const onOpenReservation = vi.fn();
+
+    render(<Footer onOpenPrivacyModal={onOpenPrivacy} onOpenReservation={onOpenReservation} />);
+
+    // Columnas principales
+    expect(screen.getByRole('heading', { level: 4, name: /explorar/i })).toBeTruthy();
+    expect(screen.getByRole('heading', { level: 4, name: /ubicación & horarios/i })).toBeTruthy();
+    expect(screen.getByRole('heading', { level: 4, name: /contacto & pedidos/i })).toBeTruthy();
+
+    // Medios de pago
+    expect(screen.getByText('Nequi')).toBeTruthy();
+    expect(screen.getByText('Daviplata')).toBeTruthy();
+    expect(screen.getByText('Bre-B')).toBeTruthy();
+    expect(screen.getByText('Datáfono')).toBeTruthy();
+    expect(screen.getByText('Efectivo')).toBeTruthy();
+
+    // Enlace de WhatsApp formateado con aria-label accesible
+    const whatsappLink = screen.getByRole('link', { name: /pedir por whatsapp/i });
+    expect(whatsappLink).toBeTruthy();
+    expect(whatsappLink.getAttribute('href')).toContain('https://wa.me/');
+
+    // Botón de reserva en salón dentro del footer
+    const reservationBtn = screen.getByRole('button', { name: /reservar mesa en salón/i });
+    fireEvent.click(reservationBtn);
+    expect(onOpenReservation).toHaveBeenCalledTimes(1);
+  });
 });
+
