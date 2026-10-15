@@ -163,10 +163,10 @@ Sigue estos pasos para desplegar **Fornace 119** en Vercel manteniendo tu config
 
 ### Paso 1: Subir tu repositorio a GitHub
 
-Crea un repositorio privado o público en tu cuenta de GitHub (ej. `tu-usuario/fornace-119`):
+Crea un repositorio privado o público en tu cuenta de GitHub (ej. `DGEnTeci/fornace-119`):
 
 ```bash
-git remote add origin https://github.com/tu-usuario/fornace-119.git
+git remote add origin https://github.com/DGEnTeci/fornace-119.git
 git branch -M main
 git push -u origin main
 ```
